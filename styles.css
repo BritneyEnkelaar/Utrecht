@@ -49,12 +49,10 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
-    margin-top: auto; /* Plaats de footer altijd onderaan de pagina */
+    margin-top: auto;
 }
 
-/* Media queries */
 
-/* Desktop (>= 1200px) */
 @media only screen and (min-width: 1200px) {
     .row {
         flex-direction: row;
@@ -73,7 +71,6 @@ footer {
     }
 }
 
-/* Large tablets and desktops (992px - 1199px) */
 @media only screen and (min-width: 992px) {
     .col-2 {
         flex: 1;
@@ -83,27 +80,32 @@ footer {
     }
 }
 
-/* Tablets (768px - 991px) */
 @media only screen and (min-width: 768px) {
     .col-2, .col-9 {
         padding: 15px;
     }
 }
 
-/* Small tablets and large smartphones (600px - 767px) */
 @media only screen and (min-width: 600px) {
     .col-2, .col-9 {
         padding: 10px;
     }
+    .right-img {
+        display: block;
+        max-width: 100%;
+        margin-top: 10px; /* Optioneel, voeg wat ruimte toe boven de afbeelding */
+        margin-bottom: 10px; /* Optioneel, voeg wat ruimte toe onder de afbeelding */
+    }
 }
 
-/* Smartphones (<= 600px) */
 @media only screen and (max-width: 600px) {
     header {
         font-size: 30px;
     }
     .right-img {
-        float: right;
+        display: block;
         max-width: 100%;
+        margin-top: 10px; /* Optioneel, voeg wat ruimte toe boven de afbeelding */
+        margin-bottom: 10px; /* Optioneel, voeg wat ruimte toe onder de afbeelding */
     }
 }
