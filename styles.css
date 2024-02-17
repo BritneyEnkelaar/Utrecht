@@ -31,7 +31,7 @@ header {
 }
 
 .col-9 {
-    background-color: rgb(255, 255, 255); /* Achtergrondkleur voor class col-9 */
+    background-color: rgb(255, 255, 255);
 }
 
 .col-2 {
@@ -67,7 +67,7 @@ footer {
 
     .Domtoren img,
     .Rietveld img {
-        margin-right: 30px; /* Verhoog de margin-right voor meer ruimte */
+        margin-right: 30px; 
     }
 }
 
@@ -90,11 +90,10 @@ footer {
     .col-2, .col-9 {
         padding: 10px;
     }
-    .right-img {
+   .right-img {
         display: block;
-        max-width: 100%;
-        margin-top: 10px; /* Optioneel, voeg wat ruimte toe boven de afbeelding */
-        margin-bottom: 10px; /* Optioneel, voeg wat ruimte toe onder de afbeelding */
+        max-width: calc(100% - 20px); 
+        margin: 10px auto; 
     }
 }
 
@@ -104,8 +103,7 @@ footer {
     }
     .right-img {
         display: block;
-        max-width: 100%;
-        margin-top: 10px; /* Optioneel, voeg wat ruimte toe boven de afbeelding */
-        margin-bottom: 10px; /* Optioneel, voeg wat ruimte toe onder de afbeelding */
+        max-width: calc(100% - 20px); 
+        margin: 10px auto; 
     }
 }
