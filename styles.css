@@ -1,0 +1,109 @@
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    position: relative;
+    background-size: cover;
+    background-image: url("afbeelding/Utrecht3.jpg");
+    background-position: center;
+    width: 100%;
+    text-align: center;
+    padding: 40px 0;
+    color: rgb(255, 255, 255);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+}
+
+.col-2, .col-9 {
+    padding: 20px;
+}
+
+.col-9 {
+    background-color: rgb(255, 255, 255); /* Achtergrondkleur voor class col-9 */
+}
+
+.col-2 {
+    background-color: rgb(190, 47, 0);
+}
+
+.right-img {
+    max-width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: rgb(128, 32, 0);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto; /* Plaats de footer altijd onderaan de pagina */
+}
+
+/* Media queries */
+
+/* Desktop (>= 1200px) */
+@media only screen and (min-width: 1200px) {
+    .row {
+        flex-direction: row;
+    }
+
+    .Domtoren .content,
+    .Rietveld .content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .Domtoren img,
+    .Rietveld img {
+        margin-right: 30px; /* Verhoog de margin-right voor meer ruimte */
+    }
+}
+
+/* Large tablets and desktops (992px - 1199px) */
+@media only screen and (min-width: 992px) {
+    .col-2 {
+        flex: 1;
+    }
+    .col-9 {
+        flex: 3;
+    }
+}
+
+/* Tablets (768px - 991px) */
+@media only screen and (min-width: 768px) {
+    .col-2, .col-9 {
+        padding: 15px;
+    }
+}
+
+/* Small tablets and large smartphones (600px - 767px) */
+@media only screen and (min-width: 600px) {
+    .col-2, .col-9 {
+        padding: 10px;
+    }
+}
+
+/* Smartphones (<= 600px) */
+@media only screen and (max-width: 600px) {
+    header {
+        font-size: 30px;
+    }
+    .right-img {
+        float: right;
+        max-width: 100%;
+    }
+}
