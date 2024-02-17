@@ -81,19 +81,26 @@ footer {
 }
 
 @media only screen and (min-width: 768px) {
-    .col-2, .col-9 {
-        padding: 15px;
+    header {
+        font-size: 30px;
+    }
+    .right-img {
+        display: block;
+        max-width: calc(100% - 40px); /* 20px witte rand aan elke zijde */
+        margin: 10px auto;
+        text-align: center; /* Gebruik 'text-align' in plaats van 'align' */
     }
 }
 
 @media only screen and (min-width: 600px) {
-    .col-2, .col-9 {
-        padding: 10px;
+    header {
+        font-size: 30px;
     }
-   .right-img {
+    .right-img {
         display: block;
-        max-width: calc(100% - 20px); 
-        margin: 10px auto; 
+        max-width: calc(100% - 40px); /* 20px witte rand aan elke zijde */
+        margin: 10px auto;
+        text-align: center; /* Gebruik 'text-align' in plaats van 'align' */
     }
 }
 
@@ -103,7 +110,8 @@ footer {
     }
     .right-img {
         display: block;
-        max-width: calc(100% - 20px); 
-        margin: 10px auto; 
+        max-width: calc(100% - 40px); /* 20px witte rand aan elke zijde */
+        margin: 10px auto;
+        text-align: center; /* Gebruik 'text-align' in plaats van 'align' */
     }
 }
